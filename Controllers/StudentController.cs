@@ -7,6 +7,6 @@ namespace ZawHtutTest.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        public StudentController() { }
+        
     }
 }
