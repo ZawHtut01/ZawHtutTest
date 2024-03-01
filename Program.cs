@@ -28,6 +28,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.Use(async (context, next) =>
+{
+    context.Response.Headers.Add("Referrer-Policy", "unsafe-url");
+    await next.Invoke();
+});
 
 app.UseHttpsRedirection();
 
