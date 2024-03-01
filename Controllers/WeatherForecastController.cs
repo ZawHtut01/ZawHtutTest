@@ -45,6 +45,7 @@ namespace ZawHtutTest.Controllers
         public async Task<IActionResult> CreateAndDownloadPdf()
         {
             var name = "Zaw Htut Aung";
+            var age = 23;
             // Create memory stream to hold PDF data
             using (var memoryStream = new MemoryStream())
             {
