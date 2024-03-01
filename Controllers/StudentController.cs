@@ -8,11 +8,5 @@ namespace ZawHtutTest.Controllers
     public class StudentController : ControllerBase
     {
         public StudentController() { }
-
-        [HttpGet]
-        public IActionResult GetAll()
-        {
-            return Ok();
-        }
     }
 }
