@@ -44,6 +44,7 @@ namespace ZawHtutTest.Controllers
         [HttpGet("CreateAndDownloadPDF")]
         public async Task<IActionResult> CreateAndDownloadPdf()
         {
+            var name = "Zaw Htut Aung";
             // Create memory stream to hold PDF data
             using (var memoryStream = new MemoryStream())
             {
